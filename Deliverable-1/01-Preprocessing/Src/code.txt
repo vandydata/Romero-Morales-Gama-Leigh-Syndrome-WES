@@ -1,0 +1,7 @@
+SNP file:
+
+java -jar SnpSift.jar extractFields all.samples.filtered.snp.nonsynonymous.ann.vcf CHROM POS ID REF ALT QUAL "ANN[0].ALLELE" "ANN[0].EFFECT" "ANN[0].IMPACT" "ANN[0].GENE" "ANN[0].GENEID" "ANN[0].FEATURE" "ANN[0].FEATUREID" "GEN[GM01503].GT" "GEN[GM03672].GT" "GEN[GM13411].GT" > snpEff_processed.vcf
+
+Indel file:
+
+java -jar SnpSift.jar extractFields all.samples.filtered.indel.nonsynonymous.ann.vcf CHROM POS ID REF ALT QUAL "ANN[0].ALLELE" "ANN[0].EFFECT" "ANN[0].IMPACT" "ANN[0].GENE" "ANN[0].GENEID" "ANN[0].FEATURE" "ANN[0].FEATUREID" "GEN[GM01503].GT" "GEN[GM03672].GT" "GEN[GM13411].GT" > snpEff_processed_indel.vcf
