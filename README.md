@@ -8,12 +8,7 @@ Please cite: TBD
 
 All raw data has been deposited via GEO:
 
-- SRA accession: 
-
-  [PRJNA626388]: https://www.ncbi.nlm.nih.gov/sra/PRJNA626388
-
-   (A reviewer link is available upon request)
-
+- SRA accession: [PRJNA626388]( https://www.ncbi.nlm.nih.gov/sra/PRJNA626388)  (A reviewer link is available upon request)
 - Release date: 2020-08-01 (tentative until manuscript is accepted for publication)
 
 ## Source code
