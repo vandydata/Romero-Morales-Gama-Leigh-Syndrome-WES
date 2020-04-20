@@ -23,7 +23,7 @@ SNP: `Deliverable-1/01-Preprocessing/Input/all.samples.filtered.snp.nonsynonymou
 
 Indel: `Deliverable-1/01-Preprocesing/Input/all.samples.filtered.indel.nonsynonymous.ann.vcf`
 
-##### Procedure:
+##### Code:
 
 Used snpSift to extract the columns in both the SNP and indel VCF files before downstream analysis:
 
@@ -49,10 +49,10 @@ Indel: `Deliverable-1/01-Preprocessing/Output/snpEff_processed_indel.vcf`
 ##### Input:
 
 `Deliverable-1/02-GeneWiz_reproduce/Input/snpEff_processed.vcf`
-`Deliverable-1/02-GeneWiz_reproduce/Input/snpEff_processed_indel.vcf`,
+`Deliverable-1/02-GeneWiz_reproduce/Input/snpEff_processed_indel.vcf`
 `Deliverable-1/02-GeneWiz_reproduce/Input/ensembl_to_uniprot`
 
-##### Procedure:
+##### Code:
 
 Run `Deliverable-1/02-GeneWiz_reproduce/Src/snpeff_reproduce_GeneWiz_Variant_Hit.R`
 
@@ -68,13 +68,67 @@ Items:
 
 `snpeff-gr37-indel-full.csv` and `snpeff-gr37-snp-full.csv`- Input data generated for other deliverable.
 
-### Figure 1B
-TBD
+### Figure 1B (Indel circular plot)
 
-### Figure 1C
-TBD
+#### Input: 
 
-### Figure 1D
-TBD
+`Deliverable-2/01-snp-indel-circular-plot/Input/snpeff-gr37-indel-full.csv` 
 
+#### Code:
+
+1. Run `Deliverable-2/01-snp-indel-circular-plot/Src/biocircos.R`
+2. Save plots.
+
+Note -  three genes manually using Inkscape 0.92. Ticks have been drawn in.
+
+| Gene Name  | chrom | end       | start     |
+| ---------- | ----- | --------- | --------- |
+| AC074212.3 | 19    | 46236509  | 46267792  |
+| AC012123.1 | 18    | 30354376  | 30349758  |
+| AC096644.1 | 1     | 220608023 | 220603286 |
+
+#### Output:
+
+Location: `Deliverable-2/01-snp-indel-circular-plot/Output/`
+
+SVG formatted circular plot:`indel_circosplot_final.svg`
+
+### Figure 1C  (SNP circular plot)
+
+#### Input: 
+
+`Deliverable-2/01-snp-indel-circular-plot/Input/snpeff-gr37-snp-full.csv`
+
+#### Code:
+
+1. Run `Deliverable-2/01-snp-indel-circular-plot/Src/biocircos.R`
+2. Save plots.
+
+#### Output:
+
+Location: `Deliverable-2/01-snp-indel-circular-plot/Output/`
+
+SVG formatted circular plot: `snp_circosplot_final.svg`
+
+
+### Figure 1D (Mitochondrial circular plot)
+
+#### Input:
+
+`Deliverable-2/02-snp-circular-chromosome-mito-plot/Input/snpeff-gr37-snp-full.csv`
+
+`Deliverable-2/02-snp-circular-chromosome-mito-plot/Input/color_ref.csv`
+
+`Deliverable-2/02-snp-circular-chromosome-mito-plot/Input/crossref.csv`
+
+#### Code:
+
+1. Run `Deliverable-2/02-snp-circular-chromosome-mito-plot/Src/mito_circos.R`
+2. Save plots
+
+#### Output:
+
+Location: `Deliverable-2/02-snp-circular-chromosome-mito-plot/Output/`
+
+SVG formatted circular plot: `mito_circoplot.svg`
 
